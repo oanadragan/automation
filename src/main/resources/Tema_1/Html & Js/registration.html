@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="form">
+<form action="index.php" method="get" target="_blank">
+    <table class="table">
+        <tr>
+            <td>
+                <label for="firstNameInput" class="label tableItems">First Name:</label>
+            </td>
+            <td>
+                <input type="text" id="firstNameInput" name="input1" onfocusout="validateName('firstNameInput');"/> <br/>
+                <div id="errorText1">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="lastNameInput" class="label tableItems">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" id="lastNameInput" name="input2" onfocusout="validateLastName('lastNameInput');"/> <br/>
+                <div id="errorText2">
+                </div>
+            </td>
+
+        </tr>
+
+    <tr>
+        <td>
+            <label for= "usernameInput" class="label" > Username:</label>
+        </td>
+        <td>
+            <input type="text" id="usernameInput" name="input7" onfocusout="validateUsername('usernameInput');"/><br/>
+            <div id="errorText4">
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="passwordInput">Password:</label>
+        </td>
+        <td>
+            <input type="password" id="passwordInput" name="input3" onfocusout="validateField('passwordInput');"/><br/>
+            <div id="errorText">
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="passwordConfirmInput">ConfirmPassword:</label>
+        </td>
+        <td>
+            <input type="password" id="passwordConfirmInput" name="input6" onfocusout="checkPasswordMatch('passwordInput, passwordConfirmInput');"/><br/>
+            <div id="errorText3">
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="emailInput">Email:</label>
+        </td>
+        <td>
+            <input type="email" id="emailInput" name="input4" required/><br/>
+            <div id="errorText5">
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="fileInput">Profile picture:</label>
+        </td>
+        <td>
+            <input type="file" id="fileInput" name="input5" required/><br/>
+        </td>
+    </tr>
+    </table>
+
+    <input type="radio" id="sexInput1" name="radio1"/>
+    <label for="sexInput1">Female</label><br/>
+    <input type="radio" id="sexInput2" name="radio1"/>
+    <label for="sexInput2">Male</label><br/>
+    <input type="radio" id="sexInput3" name="radio1" />
+    <label for="sexInput3">Other</label><br/>
+
+
+    <label for="fileInput">About yourself:</label>
+    <textarea id="textareaInput" name="txt1"></textarea><br/>
+
+    <input type="checkbox" id="subscribeNews" name="chk1"/>
+    <label for="subscribeNews">Subscribe to newsletter</label><br/> <br/>
+
+    <button type="submit" id="submitForm" name="submit1">Submit the Data</button>
+    <button type="reset" id="resetForm" name="reset1" >Reset the Data</button>
+    <input type="button" value="Validate ME!" onclick= "validateFormAll();"/>
+
+
+</form>
+</div>
+</body>
+</html>

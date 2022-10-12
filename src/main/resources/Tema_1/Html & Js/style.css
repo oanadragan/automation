@@ -1,0 +1,31 @@
+
+input,button {
+  background-color: #04AA6D;
+  border: none;
+  color: black;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding:10px;
+}
+body {
+    background-color: pink;
+    width: 520px;
+    padding: 100px;
+    border: 1px solid gray;
+    margin: 0;
+
+}
+#form {
+  border-radius: 100px;
+  background-color: powderblue;
+  padding: 100px;
+  }
+
+textarea {
+  background: pink;
+}
+
+
+
+
