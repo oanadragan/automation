@@ -35,5 +35,8 @@ public class Calculator {
                 }
             }
         }
+        else {
+            System.err.println("3 args are needed!");
+        }
     }
 }
