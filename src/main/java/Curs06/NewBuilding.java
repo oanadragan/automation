@@ -82,10 +82,6 @@ public class NewBuilding {
         Toilet1.add(toilet2);
 
 
-
-
-        Floor Floor1 = new Floor(1, conferenceRooms1, kitchen1, officeSpaces1, Toilet1);
-
         ArrayList<Room> conferenceRooms2 = new ArrayList<>();
         conferenceRooms2.add(ConferenceRoom4);
         conferenceRooms2.add(ConferenceRoom5);
@@ -105,6 +101,7 @@ public class NewBuilding {
         officeSpaces2.add(OfficeSpace2);
         officeSpaces2.add(OfficeSpace3);
 
+        Floor Floor1 = new Floor(1, conferenceRooms1, kitchen1, officeSpaces1, Toilet1);
         Floor Floor2 = new Floor(2, conferenceRooms2, kitchen1, officeSpaces2, Toilet1);
         Floor Floor3 = new Floor(3, conferenceRooms3, Toilet1);
 
@@ -118,16 +115,14 @@ public class NewBuilding {
 
 
         NewBuilding.printBuilding();
+        
         Floor1.printFloor();
-        //  System.out.println(Floor1.toString());
-
         printArrayListElements(conferenceRooms1);
         printArrayListElements(officeSpaces1);
         printArrayListElements(kitchen1);
         printArrayListElements(Toilet1);
 
         Floor2.printFloor();
-        //System.out.println(Floor2.toString());
         printArrayListElements(conferenceRooms2);
         printArrayListElements(officeSpaces2);
         printArrayListElements(kitchen1);
@@ -139,7 +134,7 @@ public class NewBuilding {
         printArrayListElements(Toilet1);
 
 
-        //Floor3.printFloor1();
+        
 
 
 
