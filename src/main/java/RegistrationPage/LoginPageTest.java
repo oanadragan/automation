@@ -63,22 +63,22 @@ public class LoginPageTest {
         try {
             Assert.assertEquals(lp.getUsernameError(), userError);
             } catch (TimeoutException e) {
-                System.out.println("Exceptional case");
+                System.out.println("Username error message not present");
             }
         try {
             Assert.assertEquals(lp.getPasswordError(), passError);
         } catch (TimeoutException e) {
-            System.out.println("Exceptional case");
+            System.out.println("Password error message not present");
         }
         try {
             Assert.assertEquals(lp.getFirstNameErrorMsgCss(),firstNameError);
         } catch (TimeoutException e) {
-            System.out.println("Exceptional case");
+            System.out.println("First Name error message not present");
         }
         try {
             Assert.assertEquals(lp.getLastNameErrorMsgCss(), lastNameError);
         } catch (TimeoutException e) {
-            System.out.println("Exceptional case");
+            System.out.println("Last Name error message not present");
         }
 
 
