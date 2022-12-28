@@ -35,8 +35,7 @@ public class CookiesPage {
         System.out.println("Number of cookies added from browser : " + driver.manage().getCookies().size());
 
         removeCookie.click();
-
-        System.out.println("Number of cookies after using the Remove the cookie button: " + driver.manage().getCookies().size());
+        System.out.println("Number of cookies after using the remove cookie button : " + driver.manage().getCookies().size());
 
         Cookie c1 = new Cookie("a", "123");
         driver.manage().addCookie(c1);
@@ -44,7 +43,7 @@ public class CookiesPage {
         System.out.println("Cookies added from code: " + c2 );
 
         driver.manage().deleteAllCookies();
-        System.out.println("Number of cookies : " + driver.manage().getCookies().size());
+        System.out.println("Number of cookies after delete: " + driver.manage().getCookies().size());
 
     }
 
